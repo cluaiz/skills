@@ -69,7 +69,7 @@ This skill operates strictly within the Cluaiz Zero-Trust sandbox.
 - **Access Level:** `{lvl_perm}`
 
 ## ⚙️ Under the Hood
-**Soul Type:** `{manifest.get('soul_type', 'KV_CACHE')}`
+**Soul Type:** `{manifest.get('soul_type', 'PROMPT_CACHE')}`
 {asset_desc}
 """
                             with open(skill_md_path, 'w', encoding='utf-8') as wf:

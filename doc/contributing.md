@@ -40,7 +40,7 @@ Every PR must include:
 skills/<category>/<skill-name>/
 ├── SKILL.md                 # Required — entry point with YAML frontmatter
 ├── logic.wasm               # Optional — native execution binary
-├── state.kv-cache           # Optional — persistent memory
+├── state.prompt-cache           # Optional — persistent memory
 ├── scripts/                 # Optional — helper scripts
 │   └── *.py
 └── references/              # Optional — detailed reference docs

@@ -26,7 +26,7 @@
 
 This repository is the central registry for **skills** and **plugins** that extend the Cluaiz Agent. Each skill is a folder containing a `SKILL.md` file — a single document that serves as both machine-readable metadata and the agent's system prompt.
 
-Skills can optionally include native execution binaries (`.wasm`), persistent memory (`.kv-cache`), helper scripts, MCP connectors, and configuration files — all linked directly from the `SKILL.md`.
+Skills can optionally include native execution binaries (`.wasm`), persistent memory (`.prompt-cache`), helper scripts, MCP connectors, and configuration files — all linked directly from the `SKILL.md`.
 
 ## Repository structure
 
@@ -73,7 +73,7 @@ graph TD
     R --> NF["🏗️ Dispatcher"]
 
     subgraph "NATIVE EXECUTION ENGINE"
-        NF -->|Memory Map| S["🧠 KV-Cache State"]
+        NF -->|Memory Map| S["🧠 Prompt-Cache State"]
         NF -->|Load Sandbox| BD["⚙️ WASM Logic"]
         NF -->|Link Protocol| H["🤝 MCP Connector"]
     end
@@ -98,7 +98,7 @@ Every skill operates on a **Triple-Tier Architecture**:
 
 | Tier | File | Purpose |
 |---|---|---|
-| 🧠 **State** | `state.kv-cache` | Persistent memory. Pre-computed context injected directly into the model's forward pass. Zero token tax. |
+| 🧠 **State** | `state.prompt-cache` | Persistent memory. Pre-computed context injected directly into the model's forward pass. Zero token tax. |
 | ⚙️ **Logic** | `logic.wasm` | Native execution. WebAssembly binary running at near-C++ speed inside a secure sandbox. |
 | 🤝 **Protocol** | `connector.json` | External bridge. MCP/API connectors linking the sandbox to databases, APIs, and services. |
 

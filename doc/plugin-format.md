@@ -17,7 +17,7 @@ Optional:
 
 ## How plugins differ from skills
 
-Skills teach the agent *new behaviors* using local assets (WASM, KV-Cache).
+Skills teach the agent *new behaviors* using local assets (WASM, Prompt-Cache).
 Plugins connect the agent to *external services* through standardized protocols.
 
 A plugin's `SKILL.md` follows the exact same format as a skill's `SKILL.md`:
