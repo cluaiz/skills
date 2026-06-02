@@ -1,6 +1,6 @@
 ---
 name: frontend-dev
-version: 1.0.0
+version: 1.0.1
 description: |
   Full-stack frontend development combining premium UI design, cinematic animations,
   AI-generated media assets, persuasive copywriting, and visual art. Builds complete,
