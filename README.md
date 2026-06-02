@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Cluaiz" width="120">
+  <img src="assets/cluaiz-skills-plugins.png" alt="The Official Registry for Cluaiz Skills & Plugins." width="">
 </p>
 
 <h1 align="center">Cluaiz Skills</h1>
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/cluaiz/skills/actions"><img src="https://img.shields.io/github/actions/workflow/status/cluaiz/skills/build-registry.yml?branch=main&style=for-the-badge" alt="CI"></a>
+  <a href="https://github.com/cluaiz/skills/actions"><img src="https://img.shields.io/github/actions/workflow/status/cluaiz/skills/release-skills.yml?branch=main&style=for-the-badge" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
 </p>
 
